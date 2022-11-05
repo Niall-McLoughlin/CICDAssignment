@@ -60,17 +60,6 @@ class PassengerInfoTest {
 
 
 
-    @Test
-    void testConstructor() {
-        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> {
-            new PassengerInfo(4);
-        });
-        assertEquals("This is not a valid number", exMessage.getMessage());
-    }
-
-
-
-
     @AfterEach
     void tearDown() {
     }
